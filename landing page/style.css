@@ -1,0 +1,142 @@
+    .my-nav{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    }
+    .carousel-item {
+      height: 100vh;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    nav{
+    text-align: center;
+    }
+  
+    a.navbar-brand{
+    display: block;
+    margin-right: 50px;
+    }
+    a.dropdown-item{
+       display: block;
+       text-align: center;
+    }
+    li.nav-item:hover ul.dropdown-menu{
+        display: block;
+        border-radius: 15px;
+    }
+    .d-block{
+       position: absolute;
+       height: 100vh;
+       width: 100%;
+    }
+    .carousel-caption p {
+        margin-bottom: 0rem;
+    }
+    
+    #waves{
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        margin-top: -10%;
+    }
+    .carousel-caption{
+        top: 45%;
+    }
+    .carousel-caption p {
+        margin-bottom: 6rem;
+    }
+    .btn{
+        background-color: rgb(46, 135, 252);
+    }
+    #waves{
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        margin-top: -10%;
+    }
+/*about us css*/
+#section1 .container{
+    color: white;
+    margin-top: 40px;
+    background: #212227 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#section1 h1{
+    position: sticky;
+    background-color: rgb(0, 89, 255);
+    margin-bottom: -150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#section1 p{
+    margin-top: 170px;
+    text-align: center;
+}
+ #other{
+    background-color: white !important;
+}
+
+#section1 #other .col p{
+    margin-top: 45px;
+}
+#section1 ion-icon{
+    font-size: 30px;
+   margin-left: -50%; 
+}
+#section1 .progress{
+    padding: 0;
+    height: 10px;
+}
+.col img{
+    width: -webkit-fill-available;
+}
+/*who we are section css*/
+#section2 {
+    padding: 0%;
+}
+#section2 img{
+    width: 100%; 
+    
+} 
+ h2{
+    margin-top: 40px;
+    left: 23%;
+    font-size: 2.5vw;
+    position: absolute;
+}
+#overLay{
+
+position: relative;
+top: -14px;
+}
+.col-sm{
+   padding: 30px;
+   background-color: #FFFFFF;
+}
+#displayImage{
+position: relative;
+width: inherit;
+}
+h5{
+display: unset !important;
+font-size: 20px;
+padding-left: 20px;
+}
+.text-black-50.a{
+padding-left: 50px;
+
+}
+.imageDesign{
+height: auto;
+width: 40px;
+}
+hr{
+margin-top: -1px;
+margin-left: 49px;
+width: 150px;
+height: 2px !important;
+background: #2E75E1;
+}

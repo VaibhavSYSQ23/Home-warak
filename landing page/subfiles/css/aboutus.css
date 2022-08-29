@@ -1,0 +1,41 @@
+/*about us css*/
+
+.container{
+    color: white;
+    margin-top: 40px;
+    top: 1163px;
+    left: 375px;
+    width: 1000px;
+    height: 450px;
+    background: #212227 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+h1{
+    position: sticky;
+    background-color: rgb(0, 89, 255);
+    margin-bottom: -150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+p{
+    margin-top: 170px;
+    text-align: center;
+}
+#other{
+    background-color: white;
+    color: #161C2D
+}
+#side1{
+    text-align: left;
+}
+.col p{
+    margin-top: 20px;
+}
+ion-icon{
+    font-size: 30px;
+   margin-left: -50%; 
+}
+.progress{
+    padding: 0;
+    height: 10px;
+}

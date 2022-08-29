@@ -1,0 +1,24 @@
+.carousel .carousel-indicators button
+{ 
+  background-color: #2E75E1; 
+}
+.col > .card{
+  border-radius: 20px;
+}
+.col > .card >img{
+  border-radius: 20px;
+}
+.col > .card:hover{
+  transition-delay: 20ms;
+  box-shadow: 0 1rem 3rem #2E75E126;
+}
+.carousel-inner{
+  padding: 25px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  transition: 1s;
+  margin-left: -10px;
+}
