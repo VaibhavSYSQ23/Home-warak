@@ -63,7 +63,6 @@
     margin-top: 40px;
     background: #212227 0% 0% no-repeat padding-box;
     opacity: 1;
-    
 }
 #section1 h1{
     position: sticky;
@@ -101,8 +100,8 @@
     height: 10px;
     background: #2E75E1;
 }
-.colp-3 img{
-    width: -webkit-fill-available !important;
+img#staticImg{
+    width: -webkit-fill-available;
 }
 /*who we are section css*/
 #section2 {
