@@ -200,3 +200,30 @@ background: #2E75E1;
     transition-duration: 1100ms;
     opacity: 0.7;
 }
+
+
+/*article css is added here*/
+.carousel .carousel-indicators button
+{ 
+  background-color: #2E75E1; 
+}
+#sectionBlog.carousel-item .col > .card{
+  border-radius: 20px;
+}
+#sectionBlog.carousel-item .col > .card >img{
+  border-radius: 20px;
+}
+.carousel-item .col > .card:hover{
+  transition-delay: 20ms;
+  box-shadow: 0 1rem 3rem #2E75E126;
+}
+#sectionBlog .carousel-inner{
+  padding: 25px;
+}
+a.btn-text-primary{
+  text-decoration: none;
+}
+a.btn-text-primary:hover{
+  transition: 1s;
+  margin-left: -10px;
+}   
