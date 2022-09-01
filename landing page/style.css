@@ -65,8 +65,6 @@
     opacity: 1;
     
 }
-
-
 #section1 h1{
     position: sticky;
     background-color:#2D80FF;
@@ -85,19 +83,26 @@
 #section1 #other .col p{
     margin-top: 45px;
 }
+#section1 p.text-dark.m-0.w-50{
+    position: absolute;
+    padding-left: 35px;
+}
+
 #section1 #progress1{
     margin: 0%;
 }
 #section1 ion-icon{
-    font-size: 30px;
+    font-size: 40px;
    margin-left: -50%; 
 }
+
 #section1 .progress{
     padding: 0;
     height: 10px;
+    background: #2E75E1;
 }
-.col img{
-    width: -webkit-fill-available;
+.colp-3 img{
+    width: -webkit-fill-available !important;
 }
 /*who we are section css*/
 #section2 {
@@ -113,6 +118,15 @@
     font-size: 25px;
     position: absolute;
 }*/
+img#definite {
+    width: 40px;
+    height: 40px;
+    background-color: #2E75E1;
+    border-radius: 5px;
+}
+#definite p{
+    background-color: #212227;
+}
     #sidebtn{
     margin-top: 12vh; 
     margin-right: 2vw; 
@@ -160,4 +174,30 @@ margin-left: 49px;
 width: 150px;
 height: 2px !important;
 background: #2E75E1;
+}
+/*latest case studies css is here*/
+.col-md{
+    padding: 0%;
+}
+.col-md-6{
+    padding: 0%;
+}
+#section5 .row .col-md img{
+    height: 220px ;
+    width: 100%;
+    display: block;
+}
+#section5 .row .col-md-6 img{
+    height: 220px ;
+    width: 100% ;
+    display: block;
+}
+/*the css for the image tile will be here*/
+.col-md:hover{
+    transition-duration: 1100ms;
+    opacity: 0.7;
+}
+.col-md-6:hover{
+    transition-duration: 1100ms;
+    opacity: 0.7;
 }
