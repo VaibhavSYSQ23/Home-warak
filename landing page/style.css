@@ -154,21 +154,21 @@ height: 2px !important;
 background: #2E75E1;
 }
 /*latest case studies css is here*/
-.col-md{
-    padding: 0%;
+.col-md {
+    padding: 0% !important;
 }
 .col-md-6{
-    padding: 0%;
+    padding: 0% !important;
 }
-#section5 .row .col-md img{
-    height: 220px ;
-    width: 100%;
-    display: block;
+#section5 .row .col-md .darken>img{
+    height: 220px !important;
+    width: 100% !important;
+    display: block !important;
 }
-#section5 .row .col-md-6 img{
-    height: 220px ;
-    width: 100% ;
-    display: block;
+#section5 .row .col-md-6 .darken>img{
+    height: 220px !important;
+    width: 100% !important;
+    display: block !important;
 }
 /*the css for the image tile will be here*/
 .col-md:hover{
@@ -181,6 +181,46 @@ background: #2E75E1;
 }
 
 
+ 
+/*important*/ 
+ a.darken {
+     display: inline-block;
+     background: black;
+     padding: 0;
+     position:relative;
+     
+ }
+ 
+ a.darken img {
+     display: block;
+     
+     -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+         -ms-transition: all 0.2s linear;
+          -o-transition: all 0.2s linear;
+             transition: all 0.2s linear;
+ }
+ 
+ 
+ a.darken span{
+     visibility:hidden; 
+     font-size:16px;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       -webkit-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+       line-height: 100%;
+ }
+ a.darken:hover span{color:#fff; visibility:visible;
+     -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+         -ms-transition: all 0.2s linear;
+          -o-transition: all 0.2s linear;
+             transition: all 0.2s linear;
+ }
+
+/*this is a important portion*/
 /*article css is added here*/
 .carousel .carousel-indicators button
 { 
