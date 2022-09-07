@@ -1,6 +1,6 @@
 .my-nav{
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     width: 100%;
     }
     #carouselExampleFade .carousel-item {
@@ -43,7 +43,7 @@
     
     #waves{
         position: relative;
-        z-index: 10;
+        z-index: 1;
         width: 100%;
         margin-top: -10%;
     }
@@ -56,13 +56,152 @@
     .btn{
         background-color: rgb(46, 135, 252);
     }
-    #waves{
+    /*slider*/
+    #Slider.container{
         position: relative;
-        z-index: 10;
-        width: 100%;
-        margin-top: -10%;
+        z-index: 4;
+        top: -85px;
     }
-
+    .slider {
+        --slider-inner-width: 1000px;
+        --slider-speed: 20s;
+      }
+              @keyframes scroll {
+        0% {
+          transform: translateX(-5%);
+        }
+        100% {
+          transform: translateX(calc((0px - var(--slider-inner-width)) - 5%));
+        }
+      }
+      .slider {
+        -webkit-transform: translate3d(0, 0, 0);
+        animation: scroll linear infinite var(--slider-speed);
+        width: calc(2 * var(--slider-inner-width));
+        transition: animation-play-state ease 0.3s;
+      }
+      .slider:hover {
+        animation-play-state: paused;
+      }
+      
+      .slider-container {
+       
+        height: fit-content;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+      .slider-container .slider {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+      }
+      .slider-container .slider__slide {
+        height: 100px;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+      }
+      .slider-container .slider__slide:hover {
+        cursor: pointer;
+      }
+      
+      .slider-container .slider__slide .slide__content {
+        color: white;
+        font-size: 80px;
+      }
+    /*slider end*/
+    @media only screen and (max-width: 900px){
+        #waves{
+            display: none;
+        }
+    }
+    @media only screen and (max-height: 500px){
+        #waves{
+            display: none;
+        }
+    }
+    @media only screen and (max-width:1150px){
+        #scrollmouse{
+            display: none;
+        }
+    }
+    @media only screen and (max-height:500px){
+        #scrollmouse{
+            display: none;
+        }
+    }
+    /*mouse animation*/
+    #scrollmouse{
+        position: relative;
+      }
+      
+      #scrollmouse a {
+        padding-top: 60px;
+      }
+      #scrollmouse a span {
+        position: absolute;
+        top: -20vh;
+        left: 50%;
+        width: 30px;
+        height: 50px;
+        margin-left: -33px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        box-sizing: border-box;
+        z-index: 2;
+      }
+      #scrollmouse a span::before {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        content: '';
+        width: 6px;
+        height: 10px;
+        margin-left: -3px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        -webkit-animation: point 1s infinite;
+        animation: point 2s infinite;
+        box-sizing: border-box;
+      }
+      @-webkit-keyframes point {
+        0% {
+          -webkit-transform: translate(0, 0);
+          opacity: 0;
+        }
+        40% {
+          opacity: 1;
+        }
+        80% {
+          -webkit-transform: translate(0, 15px);
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes point {
+        0% {
+          transform: translate(0, 0);
+          opacity: 0;
+        }
+        40% {
+          opacity: 1;
+        }
+        80% {
+          transform: translate(0, 15px);
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      
+    /*mouse animation*/
 /*who we are section css*/
 #section2 {
     padding: 0%;
@@ -116,9 +255,16 @@ div.col-md-4.col-sm-6{
 #overLay{
 position: relative;
 top: -100px;
-width:100vw;
+
 }
 @media screen and (max-width: 775px) {
+    #overLay{
+        top: 0%;
+        
+    }
+    
+}
+@media screen and (max-height: 475px) {
     #overLay{
         top: 0%;
         
@@ -173,11 +319,11 @@ background: #2E75E1;
 /*the css for the image tile will be here*/
 .col-md:hover{
     transition-duration: 1100ms;
-    opacity: 0.7;
+  
 }
 .col-md-6:hover{
     transition-duration: 1100ms;
-    opacity: 0.7;
+    
 }
 a.darken {
    
@@ -188,8 +334,6 @@ a.darken {
 }
 /* hover image text appear*/
 a.darken img {
-    
-    
     -webkit-transition: all 0.2s linear;
        -moz-transition: all 0.2s linear;
         -ms-transition: all 0.2s linear;
@@ -202,11 +346,20 @@ a.darken span{
     visibility:hidden; 
     
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 160px;
+      left: 80px;
+      background-color: white;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       line-height: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      
+}
+a.darken span button{
+    border: none;
+    position: relative;
+    margin-left: 0%;   
 }
 a.darken:hover span{color:#fff; visibility:visible;
     -webkit-transition: all 0.2s linear;
@@ -214,7 +367,16 @@ a.darken:hover span{color:#fff; visibility:visible;
         -ms-transition: all 0.2s linear;
          -o-transition: all 0.2s linear;
             transition: all 0.2s linear;
+
 }
+@media only screen and (max-width: 760px){
+  a.darken span{
+    display: none;
+  }  
+  a.darken:hover span{
+    visibility: hidden;
+  }
+ }
 /*hover image text appear*/
 
 /*article css is added here*/
