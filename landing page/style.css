@@ -407,4 +407,85 @@ a.btn-text-primary:hover{
 a.btn-text-primary > .ionicon{
     margin-top: 2px;
 }
+/*this is footer css*/
+#footerHr{
+  width: 80% !important;
+}
+.container-fluid#footerSection{
+  width: -webkit-fill-available;
+}
+ .container-fluid#bottom{
+  background-color: #1D1E21;
+  font-size: 15px;
+ }
+ #footerSection ion-icon{
+  color: aliceblue;
+  height: 30px;
+  width: 25px;
+ }
+ #bottom .grey{
+  color: #5D646D;
+ }
+ .row#first{
+  padding: 0px 20vw 0px 20vw;
+  text-align: center;
+ }
+ .row#second{
+  padding: 0px 20vw 0px 20vw;
+ }
+ 
+ .col li{
+  font-size: 10px;
+  color: white;
+ 
+  list-style: none;
+  padding: 0%;
+ }
+ .col li a{
+  text-decoration: none;
+  color: white;
+ }
+ .grey .btn{
+  margin-top: 10px;
+  width: -webkit-fill-available;
+ }
+ #footerSection #formInput{
+  position: relative;
+  left: 30px;
+  top: 20px;
+  right: 0;
+  margin: 20px;
+  max-width: 600px;
+  padding: 16px;
+  background-color: white;
+  width: 500px;
+  border-radius: 10px !important;
+ }
+ .container-fluid img{
+  width: 100%;
+ }
+ #backImage{
+  height: 90vh;
+ }
+#footerSection .btn{
+  width: fit-content;
+}
+#footerSection{
+  z-index: 1;
+}
+#mapPosition{
+  text-align: -webkit-center;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+  
+  #formInput{
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    width: -webkit-fill-available;
+    left: 0%;
+    top: 0%;
 
+  }
+}
