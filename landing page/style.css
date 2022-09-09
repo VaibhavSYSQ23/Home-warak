@@ -19,15 +19,16 @@
     }
     a.navbar-brand{
     display: block;
-    margin-right: 50px;
+    
     }
     a.dropdown-item{
        display: block;
-       
     }
     li.nav-item:hover ul.dropdown-menu{
-        display: block;
-        border-radius: 5px;
+        
+      display: block;
+      border-radius: 5px;
+        
     }
     #socialMedia a.nav-link+ion-icon{
         background-color: black;
@@ -409,7 +410,7 @@ a.btn-text-primary > .ionicon{
 }
 /*this is footer css*/
 #footerHr{
-  width: 80% !important;
+  width: 90% !important;
 }
 .container-fluid#footerSection{
   padding: 0px;
@@ -435,10 +436,9 @@ a.btn-text-primary > .ionicon{
   padding: 0px 20vw 0px 20vw;
  }
  
- .col li{
+ #second .col li{
   font-size: 10px;
   color: white;
- 
   list-style: none;
   padding: 0%;
  }
@@ -479,6 +479,11 @@ a.btn-text-primary > .ionicon{
   text-align: -webkit-center;
   margin-top: 20px;
 }
+#Subscribe{
+  position: relative;
+  width: -webkit-fill-available;
+  top: 10px;
+}
 @media only screen and (max-width: 600px) {
   
   #footerSection #formInput{
@@ -489,5 +494,36 @@ a.btn-text-primary > .ionicon{
     left: 0%;
     top: 0%;
 
+  }
+}
+/*our industries section css is here*/
+#section4 #FirstPortion{
+  text-align: center;
+}
+#section4 #FirstPortion p.text-black-50{
+  margin-left: 11vw;
+  margin-right: 11vw;
+}
+#section4 .list-group-item:hover{
+  transition: 2s;
+  background-color: #2E75E1;
+  color: azure;
+}
+#section4 .card .text-black-50{
+  font-size: 12px;
+}
+#section4 div.card.shadow{
+  border-radius: 20px !important;
+}
+#section4 div.card.shadow .list-group.list-group-flush{
+  border-radius: 20px;
+}
+@media only screen and (max-width: 1000px){
+  #section4 .col#Image{
+      display: none;
+  }
+  #section4 .col{
+      margin-top: 20px;
+  
   }
 }
