@@ -412,6 +412,7 @@ a.btn-text-primary > .ionicon{
   width: 80% !important;
 }
 .container-fluid#footerSection{
+  padding: 0px;
   width: -webkit-fill-available;
 }
  .container-fluid#bottom{
@@ -465,7 +466,8 @@ a.btn-text-primary > .ionicon{
   width: 100%;
  }
  #backImage{
-  height: 90vh;
+  height: 79vh;
+  position: absolute;
  }
 #footerSection .btn{
   width: fit-content;
@@ -479,7 +481,7 @@ a.btn-text-primary > .ionicon{
 }
 @media only screen and (max-width: 600px) {
   
-  #formInput{
+  #footerSection #formInput{
     align-items: center;
     margin: 0%;
     padding: 0%;
