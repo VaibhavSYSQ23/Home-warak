@@ -24,14 +24,23 @@
     a.dropdown-item{
        display: block;
     }
-    li.nav-item:hover ul.dropdown-menu{
-        
+    li.nav-item:hover ul.dropdown-menu{    
       display: block;
       border-radius: 5px;
+      position: fixed;
+    }
+    @media only screen and (max-width: 900px){
+      li.nav-item:hover ul.dropdown-menu{
+        display: block;
+        border-radius: 5px;
+        position: fixed;
         
+        background-color: #2D80FF; 
+      }
     }
     #socialMedia a.nav-link+ion-icon{
         background-color: black;
+
     }
     .d-block{
        position: absolute;
@@ -462,12 +471,13 @@ a.btn-text-primary > .ionicon{
   width: 500px;
   border-radius: 10px !important;
  }
- .container-fluid img{
+ #footerSection .container-fluid img{
   width: 100%;
  }
  #backImage{
-  height: 79vh;
+  height: 100vh;
   position: absolute;
+  width: inherit;
  }
 #footerSection .btn{
   width: fit-content;
