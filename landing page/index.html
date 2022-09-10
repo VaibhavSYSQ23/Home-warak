@@ -138,7 +138,7 @@
 </div>
 <div><img src="subfiles/images/Subtraction 2.svg" alt="waves" id="waves"></div>
 <section id="scrollmouse">
-  <a href="#">
+  <a href="#scrollTo" >
     <span></span>
   </a>
 </section>
@@ -175,7 +175,7 @@
     </div>
   </div>  
 <br><br>
-<div class="container">
+<div class="container" id="scrollTo">
   <p class="text-primary text-center" >// LATEST CASE STUDIES</p>
   <h2 class="text-center">Introduce Our Projects</h2>
   <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
@@ -686,6 +686,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script>
         $(".number").counterUp({time:4000});
+    </script>
+    <script>
+      $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    },'smooth');
+    return false;
+});
     </script>
 </body>
 </html>
