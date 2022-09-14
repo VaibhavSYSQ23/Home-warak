@@ -28,15 +28,13 @@
     li.nav-item:hover ul.dropdown-menu{    
       display: block;
       border-radius: 5px;
-      position: fixed;
+      position: absolute;
     }
     @media only screen and (max-width: 900px){
-      li.nav-item:hover ul.dropdown-menu{
-        display: block;
-        border-radius: 5px;
-        position: fixed;
-        
-        background-color: #2D80FF; 
+      li.nav-item ul:hover .dropdown-menu{
+      display: block;
+      border-radius: 5px;
+      position: absolute;
       }
     }
     #socialMedia a.nav-link+ion-icon{
@@ -543,23 +541,6 @@ a.btn-text-primary > .ionicon{
   
   }
 }
-/*for testing*/
-#Image .menu-img  {
-  position: relative;
-  width: 100%;
-  height: 500px
-}
-#Image .menu-img img {
-  opacity: 0;
-  width: inherit;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);   
-}
-
 /*our services section*/
  .row .js .slider-single > div:nth-child(1n+2) { display: none }
 
@@ -571,11 +552,17 @@ a.btn-text-primary > .ionicon{
 	position: relative;
   background-color: transparent;
 }
+.row .slick-prev:before, .slick-next:before{
+  color: #1D1E21;
+  font-size: 40px;
+  position: relative;
+  top: -9px;
+}
 .row .slick-next{
-  right: -10px;
+  right: -5px;
 }
 .row .slick-prev{
-  left: -10px;
+  left: -25px;
 }
 .row .slider-nav h3::before {
 	content: "";
@@ -613,4 +600,80 @@ a.btn-text-primary > .ionicon{
      width: none; 
      transition: none;
      --slider-inner-width: none;
+}
+/*tech index css*/
+.hexagon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+      -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+.border {
+  height: 200px;
+  width: 200px;
+  background: transparent;
+  left: 120px;
+}
+@media only screen and (max-width: 500px){
+  .border{
+    left: 10vw;
+  }
+}
+
+.filled {
+  height: 200px;
+  width: 200px;
+  background-color: #2D80FF;
+  
+}
+.hexagon-s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+      -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+.border-s {
+  height: 150px;
+  width: 150px;
+
+
+}
+.filled-s {
+  height: 130px;
+  width: 130px;
+  background: white;
+  transition: 0.3s;
+}
+.filled-s:hover {
+  height: 149px;
+  width: 149px;
+  transition: 0.1s;
+}
+
+.top-col{
+  display: flex;
+  position: inherit;
+  
+}
+.hover-text{
+  display: none;
+  list-style: url('/landing\ page/subfiles/images/Rectangle 549.svg');
+  color: #FFFFFF;
+
+}
+.container-fluid#Hexagon{
+  background-image: url("/landing\ page/subfiles/images/Rectangle 602.png");
+  background-size: cover;
+  padding: 30px;
+}
+.display-img{
+  display: none;
+}
+.display-img img{
+  width: 100%;
+  height: 100%;
 }

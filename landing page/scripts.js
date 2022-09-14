@@ -1,19 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-    let navList = document.querySelector(".list-group").children;
-    let imgList = document.querySelector(".menu-img").children;
-    for (let i=0; i<navList.length; i++) {
-          let li = navList[i];
-          let img = imgList[i];
-          li.addEventListener('mouseover', () => {
-            img.style.opacity = 1;
-          });
-          li.addEventListener('mouseleave', () => {
-            img.style.opacity = 0;
-          });
-        }
-      });
-
-
 // slick slider jQuery
 $('.slider-single').slick({
     slidesToShow: 1,
