@@ -44,17 +44,8 @@
       padding: 10px;
       left: 160px;
       top: 10px;
-      list-style: none;
-      
+      list-style: none; 
     }
-    
-    
-    
-    
-
-
-
-
     /*multilevel dropdown*/
 
     a.dropdown-item{
@@ -132,7 +123,7 @@
       .slider-container {
        
         height: fit-content;
-        overflow: hidden;
+       
         position: relative;
         width: 100%;
       }
@@ -672,7 +663,7 @@ a.btn-text-primary > .ionicon{
 .border-s {
   height: 150px;
   width: 150px;
-
+  border-color: red;
 
 }
 .filled-s {
@@ -682,8 +673,8 @@ a.btn-text-primary > .ionicon{
   transition: 0.3s;
 }
 .filled-s:hover {
-  height: 149px;
-  width: 149px;
+  height: 159px;
+  width: 159px;
   transition: 0.1s;
 }
 
